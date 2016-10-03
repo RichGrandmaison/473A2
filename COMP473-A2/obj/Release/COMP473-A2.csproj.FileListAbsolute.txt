@@ -1,0 +1,5 @@
+F:\workspace\COMP473-A2\COMP473-A2\bin\Release\COMP473-A2.exe.config
+F:\workspace\COMP473-A2\COMP473-A2\bin\Release\COMP473-A2.exe
+F:\workspace\COMP473-A2\COMP473-A2\bin\Release\COMP473-A2.pdb
+F:\workspace\COMP473-A2\COMP473-A2\obj\Release\COMP473-A2.exe
+F:\workspace\COMP473-A2\COMP473-A2\obj\Release\COMP473-A2.pdb

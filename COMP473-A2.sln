@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP473-A2", "COMP473-A2\COMP473-A2.csproj", "{C5D4386F-7240-4A9A-98C8-8313245C96CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E28F926-86D6-4B93-B2FF-9F6259C0178A}"
+	ProjectSection(SolutionItems) = preProject
+		data.txt = data.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5D4386F-7240-4A9A-98C8-8313245C96CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D4386F-7240-4A9A-98C8-8313245C96CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D4386F-7240-4A9A-98C8-8313245C96CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D4386F-7240-4A9A-98C8-8313245C96CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

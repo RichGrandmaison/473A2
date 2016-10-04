@@ -40,11 +40,9 @@ namespace COMP473_A2
                         Console.Write(pixelInts[i, j]);
                         if (j == this.pixelInts.GetLength(1) - 1)
                             Console.WriteLine();
-
                     }
                 }
             }
-
         }
 
         public void GenerateIntsFromChars()

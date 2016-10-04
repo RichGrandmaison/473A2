@@ -15,8 +15,10 @@ namespace COMP473_A2
             string filePath = "F:\\workspace\\COMP473-A2\\data.txt";
             OriginalData od = new OriginalData(filePath);
             Image original = od.GenerateOriginalImage();
-            Image copy = original.MakeCopy();
-
+            Preprocessor pp = new Preprocessor();
+            Image result = pp.ApplyPreprocessingXTimes(original, 1, Preprocessor.Type.FillOpposites);
+            Image result2 = pp.ApplyPreprocessingXTimes(result, 1, Preprocessor.Type.FillImmidiateNeighbors);
+            Image result3 = pp.ApplyPreprocessingXTimes(result2, 15, Preprocessor.Type.Thin);
 
             Console.ReadKey();
 

@@ -27,7 +27,7 @@ namespace COMP473_A2
             while ((line = sr.ReadLine()) != null)
             {
                 Rows++;
-                Columns = Math.Max(Columns, line.Length);
+                Columns = (Math.Max(Columns, line.Length));
             }
             sr.Close();
         }

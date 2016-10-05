@@ -4,3 +4,9 @@ F:\workspace\COMP473-A2\COMP473-A2\bin\Debug\COMP473-A2.pdb
 F:\workspace\COMP473-A2\COMP473-A2\obj\Debug\COMP473-A2.csprojResolveAssemblyReference.cache
 F:\workspace\COMP473-A2\COMP473-A2\obj\Debug\COMP473-A2.exe
 F:\workspace\COMP473-A2\COMP473-A2\obj\Debug\COMP473-A2.pdb
+C:\workspace\473A2\COMP473-A2\bin\Debug\COMP473-A2.exe.config
+C:\workspace\473A2\COMP473-A2\obj\Debug\COMP473-A2.exe
+C:\workspace\473A2\COMP473-A2\obj\Debug\COMP473-A2.pdb
+C:\workspace\473A2\COMP473-A2\bin\Debug\COMP473-A2.exe
+C:\workspace\473A2\COMP473-A2\bin\Debug\COMP473-A2.pdb
+C:\workspace\473A2\COMP473-A2\obj\Debug\COMP473-A2.csprojResolveAssemblyReference.cache

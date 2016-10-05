@@ -16,9 +16,10 @@ namespace COMP473_A2
             OriginalData od = new OriginalData(filePath);
             Image original = od.GenerateOriginalImage();
             Preprocessor pp = new Preprocessor();
-            Image result = pp.ApplyPreprocessingXTimes(original, 1, Preprocessor.Type.FillOpposites);
-            Image result2 = pp.ApplyPreprocessingXTimes(result, 1, Preprocessor.Type.FillImmidiateNeighbors);
-            Image result3 = pp.ApplyPreprocessingXTimes(result2, 15, Preprocessor.Type.Thin);
+            Image result = pp.ApplyPreprocessingXTimes(original, 0, Preprocessor.Type.FillImmidiateNeighbors);
+            result = pp.ApplyPreprocessingXTimes(result, 10, Preprocessor.Type.FillOpposites);
+            result = pp.ApplyPreprocessingXTimes(result, 10, Preprocessor.Type.FillImmidiateNeighbors);
+            result = pp.ApplyPreprocessingXTimes(result, 1, Preprocessor.Type.Thin);
 
             Console.ReadKey();
 

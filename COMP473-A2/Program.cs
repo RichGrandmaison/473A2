@@ -39,7 +39,6 @@ namespace COMP473_A2
         private static Image ProcessImage(Image toProcess, Preprocess pp)
         {
             toProcess = pp.LoopProcess(toProcess, Preprocess.Process.FillOpposites);
-            //toProcess = pp.LoopProcess(toProcess, Preprocess.Process.FillImmediateNeighbors);
             toProcess = pp.LoopProcess(toProcess, Preprocess.Process.Thin);
             toProcess = pp.LoopProcess(toProcess, Preprocess.Process.RemoveLonelyOnes);
             toProcess = pp.LoopProcess(toProcess, Preprocess.Process.RemoveLonelyInColumn);

@@ -1,0 +1,10 @@
+F:\workspace\COMP473-A2\COMP473-A2b\bin\Debug\COMP473-A2b.exe.config
+F:\workspace\COMP473-A2\COMP473-A2b\bin\Debug\COMP473-A2b.exe
+F:\workspace\COMP473-A2\COMP473-A2b\bin\Debug\COMP473-A2b.pdb
+F:\workspace\COMP473-A2\COMP473-A2b\obj\Debug\COMP473-A2b.csprojResolveAssemblyReference.cache
+F:\workspace\COMP473-A2\COMP473-A2b\obj\Debug\Interop.Accessibility.dll
+F:\workspace\COMP473-A2\COMP473-A2b\obj\Debug\COMP473-A2b.csproj.ResolveComReference.cache
+F:\workspace\COMP473-A2\COMP473-A2b\obj\Debug\COMP473-A2b.exe
+F:\workspace\COMP473-A2\COMP473-A2b\obj\Debug\COMP473-A2b.pdb
+F:\workspace\COMP473-A2\COMP473-A2b\bin\Debug\COMP473-A2.exe
+F:\workspace\COMP473-A2\COMP473-A2b\bin\Debug\COMP473-A2.pdb

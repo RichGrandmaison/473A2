@@ -14,15 +14,41 @@ namespace COMP473_A2
         {
             string filePath = "F:\\workspace\\COMP473-A2\\data.txt";
             OriginalData od = new OriginalData(filePath);
-            Image original = od.GenerateOriginalImage();
-            Preprocessor pp = new Preprocessor();
-            Image result = pp.ApplyPreprocessingXTimes(original, 0, Preprocessor.Type.FillImmidiateNeighbors);
-            result = pp.ApplyPreprocessingXTimes(result, 10, Preprocessor.Type.FillOpposites);
-            result = pp.ApplyPreprocessingXTimes(result, 10, Preprocessor.Type.FillImmidiateNeighbors);
-            result = pp.ApplyPreprocessingXTimes(result, 1, Preprocessor.Type.Thin);
+            Image image = od.GenerateOriginalImage();
+            image.TrimStartingAndEndingZerosInColumns();
+            List<Image> shapes = image.SeperateShapes();
+            Image eight = shapes[0];
+            Image nine = shapes[1];
 
-            Console.ReadKey();
+            Preprocess pp = new Preprocess();
 
+            eight = ProcessImage(eight, pp);
+            nine = ProcessImage(nine, pp);
+
+            System.Console.WriteLine();
+            Image normEight = eight.Normalize(nine);
+
+            normEight.DisplayCOG(normEight.GetCenterOfGravity());
+            System.Console.WriteLine();
+            nine.DisplayCOG(nine.GetCenterOfGravity());
+
+
+            System.Console.ReadKey();
+        }
+
+        private static Image ProcessImage(Image toProcess, Preprocess pp)
+        {
+            toProcess = pp.LoopProcess(toProcess, Preprocess.Process.FillOpposites);
+            //toProcess = pp.LoopProcess(toProcess, Preprocess.Process.FillImmediateNeighbors);
+            toProcess = pp.LoopProcess(toProcess, Preprocess.Process.Thin);
+            toProcess = pp.LoopProcess(toProcess, Preprocess.Process.RemoveLonelyOnes);
+            toProcess = pp.LoopProcess(toProcess, Preprocess.Process.RemoveLonelyInColumn);
+            toProcess = pp.LoopProcess(toProcess, Preprocess.Process.RemoveLonelyOnes);
+            toProcess.TrimStartingAndEndingZerosInColumns();
+            toProcess.DisplayCOG(toProcess.GetCenterOfGravity());
+            toProcess.Display('c');
+
+            return toProcess;
         }
     }
 }

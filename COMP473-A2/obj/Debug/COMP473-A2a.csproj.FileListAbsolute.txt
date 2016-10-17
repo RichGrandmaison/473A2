@@ -1,0 +1,6 @@
+F:\workspace\COMP473-A2\COMP473-A2\bin\Debug\COMP473-A2.exe.config
+F:\workspace\COMP473-A2\COMP473-A2\bin\Debug\COMP473-A2.exe
+F:\workspace\COMP473-A2\COMP473-A2\bin\Debug\COMP473-A2.pdb
+F:\workspace\COMP473-A2\COMP473-A2\obj\Debug\COMP473-A2a.csprojResolveAssemblyReference.cache
+F:\workspace\COMP473-A2\COMP473-A2\obj\Debug\COMP473-A2.exe
+F:\workspace\COMP473-A2\COMP473-A2\obj\Debug\COMP473-A2.pdb

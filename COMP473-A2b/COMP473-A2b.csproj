@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5D4386F-7240-4A9A-98C8-8313245C96CA}</ProjectGuid>
+    <ProjectGuid>{A0244919-8D09-4174-9B38-368A73F6E6D2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>COMP473_A2</RootNamespace>
-    <AssemblyName>COMP473-A2</AssemblyName>
+    <RootNamespace>COMP473_A2b</RootNamespace>
+    <AssemblyName>COMP473-A2b</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,14 +44,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Image.cs" />
-    <Compile Include="OriginalData.cs" />
-    <Compile Include="Preprocessor.cs" />
+    <Compile Include="Binarize.cs" />
+    <Compile Include="Process.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\coin.jpg" />
+    <Content Include="Resources\coin2.jpg" />
+    <Content Include="Resources\stamp.jpg" />
+    <Content Include="Resources\stamp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COMP473-A2\COMP473-A2a.csproj">
+      <Project>{c5d4386f-7240-4a9a-98c8-8313245c96ca}</Project>
+      <Name>COMP473-A2a</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

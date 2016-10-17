@@ -34,7 +34,7 @@ namespace COMP473_A2
 
         public Image GenerateOriginalImage()
         {
-            Image temp = new Image(this.Rows, this.Columns);
+            Image temp = new Image(this.Rows, this.Columns); //pad
             int row = 0;
             int column = 0;
             StreamReader sr = new StreamReader(filePath);

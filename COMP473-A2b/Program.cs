@@ -29,7 +29,6 @@ namespace COMP473_A2b
             stamp1 = p.LoopProcess(stamp1, Process.Type.FillOpposites, 15);
             Bitmap stampContour = p.GetContour(stamp1);
             stampContour.Save("contourStamp.bmp");
-
         }
     }
 }

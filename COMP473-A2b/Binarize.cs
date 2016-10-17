@@ -33,12 +33,9 @@ namespace COMP473_A2b
                     int gray = (int)(r * 0.2989 + g*0.5870 + b*0.1140);
                     int THRESHOLD = 128;
                     int blackOrWhite = (gray > THRESHOLD) ? 255 : 0;
-
                     image.SetPixel(i, j, Color.FromArgb(blackOrWhite, blackOrWhite, blackOrWhite));
                 }
             }
-            counter++;
-            image.Save("blackAndWhite" + counter +".bmp");
         }
  
     }

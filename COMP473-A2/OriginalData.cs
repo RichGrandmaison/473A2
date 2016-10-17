@@ -23,6 +23,7 @@ namespace COMP473_A2
         public void SetRowsAndColumns()
         {
             string line;
+
             StreamReader sr = new StreamReader(filePath);
             while ((line = sr.ReadLine()) != null)
             {

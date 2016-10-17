@@ -13,8 +13,8 @@ namespace COMP473_A2
 
         static void Main(string[] args)
         {
-            //string filePath = "F:\\workspace\\COMP473-A2\\data.txt";
-            string filePath = "C:\\workspace\\473A2\\data.txt";
+            string filePath = "F:\\workspace\\COMP473-A2\\data.txt";
+            //string filePath = "C:\\workspace\\473A2\\data.txt";
             OriginalData od = new OriginalData(filePath);
             Image image = od.GenerateOriginalImage();
             image.TrimStartingAndEndingZerosInColumns();

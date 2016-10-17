@@ -91,8 +91,6 @@ namespace COMP473_A2b
                 }
                 times--;
             } while (times > 0);
-
-            copy.Save("processed.bmp");
             return copy;
         }
 
@@ -114,7 +112,6 @@ namespace COMP473_A2b
                     }
                 }
             }
-
             return copy;
         }
 
